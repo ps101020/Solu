@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <title>menu</title>
+  
+</head>
+<style>
+  
+    body{ margin:0; background-color: black;}    
+   header { background-color:#997231;  font-size:25px; padding:12px; margin-left:0;
+   } 
+   a { color: white; font-weigth:bold; text-decoration: none; display:block;  margin-left: 0;
+  }
+  h3 {
+      text-align:center;
+  }
+   nav a {  
+  background-color:white;  background-color: #997231; padding: 12px 12px 12px 32px;
+   }
+   
+   nav{position:fixed; z-index: 1;      background-color:#997231; height:100%; left:0; top:0; overflow:hidden; width:0px; transition: width 0.3s; margin-left:0; 
+              
+   } 
+   
+   nav a:hover { color:#997231;  transition-duration: .2s; background-color:white;}
+   
+   main {  background-color: white;
+   padding:5px; padding-bottom: 22px;
+   transition: margin-left: 200px 0.5s;   }
+   .cnt1 { 
+       display: flex; align-items:center; justify-content:center;
+   }
+      .ttl { position:absolute; top:0; left:50vw;
+    width: 200px;
+   }
+.container { display: inline-block; float: left;
+    width: 100%; margin:2px;  max-width:500px;
+    margin-bottom: 10px;}
+p {
+    margin : 10px; text-align: center;
+}
+span {
+    
+}
+
+button { padding: 20px; border:inset 2px #3BB1F2; margin:5px; width: 150px;
+    color: white; font-weigth: bold; border-radius:15px; background-color: #997231;
+}
+footer { margin:0; padding: 0; 
+    
+}
+img { float: left;
+    width:100%; margin:0; max-width:600px; max-height: 400px;
+}
+
+</style>
+
+
+<body>
+    <header>
+        <!-- codigo para caracteries especiais &#9776; icone de menu -->
+        <a class="abrir" onclick="abrirMenu()" href="#"><strong>&#9776;</strong> </a> <div="cnt1"> <img src="title.png" class="ttl">
+ </div>   </header>
+    <nav class="menu">
+      <a id="fechar" onclick="fecharMenu()" href="#">❌️</a>
+      <a href="#">Consultoria</a>
+      <a href="#">Treinamento</a>  <a href="#">parceiros</a>
+      <a href="https://s.kwai.app/f/jMp434eN">Kwai</a>
+      <a href="    https://instagram.com/solucaoassessoria?igshid=YmM0MjE2YWMzOA== ">Instagram</a>  
+    </nav>
+ 
+    <main>
+        <h3>BEM VINDO A PÁGINA DE PORTIFÓLIO</h3>
+      <p>pagina demonstrativa.</p>  
+     
+      
+     
+       </div>
+    
+
+     
+      
+         <div> <p> 
+              <img src="aa.jpg">
+      
+         </p> <br>
+        
+<h3>SUA SASTIFAÇÃO É A NOSSA RECOMPENSA</h3>
+<p>
+    todos os serviços estão super asseciveis a todos, contamos com o melhor preço do mercado.  Faça uma pesquisa antes de contratar e comprove você mesmo.
+</p>
+<p>
+    acreditamos que o preço justo trará maior gratificação para ambas as partes, e todos saimos sastifeitos.😀 
+</p>
+<p>
+    oque está esperando? peça um orçamento grátis. 
+</p>
+</div> 
+<center>
+   <span margin="20px" padding="20px"><button onclick="btn1()">ORÇAMENTO GRÁTIS</button><button onclick="btn2()">MAIS PORTIFÓLIOS</button></span>
+    </main>
+ 
+    </center>
+    <footer >
+        <img src="myimg.png">
+      
+    </footer>
+    <br><br>
+    <script>
+        
+        function abrirMenu() {
+       document.querySelector("nav").style="width:200px;"; document.querySelector("main").style="margin-left: 200px;";
+       
+   
+        }
+        
+        function fecharMenu() {
+       document.querySelector("nav").style="width=0;";
+       document.querySelector("main").style="margin-left:0;";
+      
+        
+        }
+        
+        function btn1() {
+           location.href="https://api.whatsapp.com/send?phone=5591981532062";
+        
+        }
+        
+        function btn2() {
+      let v =  confirm("a pagina de portifolio sera caminha para o WhatsApp, lá será disponibilizado o portfólio")
+          
+          if(v == true) {
+           location.href="https://api.whatsapp.com/send?phone=5591981532062";   
+          }
+            
+        }          
+    </script>
+    
+</body>
+</html>
